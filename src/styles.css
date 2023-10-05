@@ -9,11 +9,7 @@
 }
 
 .hero-books-1{
-  /* width: 30rem;
-  height: 30rem;
-  background: url("./images/diffColorbooks.png");
-  background-size: cover;
-background-repeat: no-repeat; */
+  position: relative;
 }
 
 .navbar{
