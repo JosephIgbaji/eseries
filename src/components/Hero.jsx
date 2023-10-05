@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="hero-text-width pt-4">
         {/* <img src={svgBg} width="100%" height="837" alt="svg background" /> */}
         <h1 className="green-text mb-3">
-          One App, all of your <br /> exams in
+          One App, all of your exams in
           <span className="orange-text"> e-series</span>
         </h1>
         <p className="mb-2">
@@ -72,7 +72,7 @@ const Hero = () => {
                 </filter>
               </defs>
             </svg>
-            <p style={{ width: "15rem" }}>Watch how it works</p>
+            <p style={{ width: "10rem" }}>Watch how it works</p>
           </span>
         </div>
       </div>

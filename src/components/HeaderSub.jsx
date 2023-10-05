@@ -4,7 +4,7 @@ const HeaderSub = ({ orangeText, greenText, content }) => {
   return (
     <div className="header-sub flex-container-col">
       <div>
-        <h2 style={{ color: "#2BA89D" }}>
+        <h2 className="mb-2" style={{ color: "#2BA89D" }}>
           <span style={{ color: "#F58A06" }}>{orangeText} </span>
           {greenText}
         </h2>
