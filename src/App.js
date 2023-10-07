@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import CloudSoftSection from "./components/CloudSoftSection";
 import WhatSection from "./components/WhatSection";
 import Feaures from "./components/Feaures";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <CloudSoftSection />
       <WhatSection />
       <Feaures />
+      <Footer />
     </div>
   );
 }

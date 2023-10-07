@@ -316,7 +316,7 @@ const Feaures = () => {
         </div>
       </section>
 
-      <section className="news-resource">
+      <section className="news-resource flex-container-col">
         <div style={{ textAlign: "center", width: "50rem" }}>
           <h2 className="mb-2">Latest News and Resources</h2>
           <p>
@@ -325,15 +325,20 @@ const Feaures = () => {
             ad minim veniam, quis nostrud exercitation ullamco.
           </p>
         </div>
-        <div>
-          <div>
-            <img src={newsImage} alt="online news call" />
+        <div className="news-resource-grid mt-6">
+          <div className="width-33">
+            <img
+              className="mb-2"
+              src={newsImage}
+              width="555px"
+              alt="online news call"
+            />
             <Button value="News" bgcol="#2BA89D" color="#ffffff" />
-            <p>
+            <p className="mt-1 fs-1-25 width-30">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p>
+            <p className="mt-1 mb-2 width-30">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -366,10 +371,18 @@ export default Feaures;
 
 const LatestNews = ({ photo, title, details }) => {
   return (
-    <div>
-      <img src={photo} alt={title} />
-      <div>
-        <p>{title}</p>
+    <div className="width-35 flex-container flex-gap mb-2">
+      <div style={{ width: "222px", height: "165px" }}>
+        <img
+          // style={{ imageSize: "contain" }}
+          width="222px"
+          height="165px"
+          src={photo}
+          alt={title}
+        />
+      </div>
+      <div className="">
+        <p className="mb-2 fs-1-25">{title}</p>
         <p>{details}</p>
       </div>
     </div>
