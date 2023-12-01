@@ -6,16 +6,16 @@ const CloudSoftSection = () => {
   return (
     <div className="cloud-soft-section flex-container-col">
       <div className="mb-6">
-        <p>Trusted by 5,000+ Companies Worldwide</p>
+        <p className="text-lg">Trusted by 5,000+ Companies Worldwide</p>
       </div>
-      <div>
+      <div className="mb-4">
         <HeaderSub
           orangeText="All-in-One"
           greenText="Cloud Software"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
         />
       </div>
-      <div className="cloud-info-section flex-container flex-gap">
+      <div className="flex flex-col lg:flex-row gap-16 mt-0">
         <CloudInfo
           icon={
             <svg

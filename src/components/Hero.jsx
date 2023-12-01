@@ -1,25 +1,23 @@
 import React from "react";
-// import svgBg from "../images/svg-hero-bg-new.png";
 import book1 from "../images/diffColorbooks.png";
 import Button from "./ButtonNav";
 
 const Hero = () => {
   return (
-    <div className="hero-background">
-      <div className="hero-text-width pt-4">
-        {/* <img src={svgBg} width="100%" height="837" alt="svg background" /> */}
-        <h1 className="green-text mb-3">
+    <div className="bg-white flex flex-col-reverse items-center md:flex-row md:justify-between mt-3 w-screen px-3">
+      <div className="text-center flex flex-col items-center md:text-left md:w-1/2 md:h-1/2 px-3">
+        <h1 className="text-green-700 mb-3 text-5xl font-bold">
           One App, all of your exams in
-          <span className="orange-text"> e-series</span>
+          <span className="text-orange-600"> e-series</span>
         </h1>
-        <p className="mb-2">
+        <p className="text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco.
         </p>
-        <div className="flex-container">
+        <div className="flex items-center">
           <Button value="Join for free" bgcol="#2BA89D" color="#ffffff" />
-          <span onClick={() => {}} className="flex-container">
+          <span onClick={() => {}} className="flex items-center">
             <svg
               width="158"
               height="158"
@@ -72,12 +70,14 @@ const Hero = () => {
                 </filter>
               </defs>
             </svg>
-            <p style={{ width: "10rem" }}>Watch how it works</p>
+            <p className="hidden lg:block" style={{ width: "10rem" }}>
+              Watch how it works
+            </p>
           </span>
         </div>
       </div>
-      <div className="hero-books-1">
-        <img src={book1} width="530px" alt="different color books" />
+      <div className="self-center">
+        <img src={book1} width="" alt="different color books" />
       </div>
     </div>
   );

@@ -8,13 +8,13 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="container">
+    <div className="flex items-center flex-col">
       <Navbar />
       <Hero />
       <CloudSoftSection />
       <WhatSection />
       <Feaures />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

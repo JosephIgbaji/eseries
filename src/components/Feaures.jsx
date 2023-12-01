@@ -13,10 +13,10 @@ import ThreeThree from "../images/three-three.png";
 
 const Feaures = () => {
   return (
-    <div className="flex-container-col mt-6">
-      <section className="flex-container flex-gap-6 mb-6">
-        <div className="width-30 text-side">
-          <h2 className="mb-2">
+    <div className="flex flex-col items-center mt-6 text-center lg:text-left">
+      <section className="flex flex-col items-center lg:flex-row gap-6 mb-6">
+        <div className="w-[350px] md:w-[450px]">
+          <h2 className="text-xl font-semibold mb-1">
             Everything You can do in a physical classroom you can do with
             e-series
           </h2>
@@ -31,7 +31,9 @@ const Feaures = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco.
           </p>
-          <a href="/">Learn more</a>
+          <a className="text-lg text-green-800" href="/">
+            Learn more
+          </a>
         </div>
         <div className="feature-play-image image-side">
           <svg
@@ -95,10 +97,10 @@ const Feaures = () => {
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
       />
 
-      <section className="flex-container flex-gap mb-6 ml-3 mr-2">
+      <section className="flex flex-col items-center lg:flex-row gap-5 mt-1">
         <div className="customer-care-image image-side"></div>
-        <div className="width-3 text-side">
-          <h2 className="orange-text">
+        <div className="">
+          <h2 className="orange-text text-2xl font-semibold">
             A <span className="green-text">User interface</span> designed <br />
             for the classroom
           </h2>
@@ -110,13 +112,13 @@ const Feaures = () => {
         </div>
       </section>
 
-      <section className="female-student">
-        <div className="width-30">
-          <h2 className="green-text">
+      <section className="female-student flex flex-col-reverse gap-4 lg:flex-row">
+        <div className="width-30 ">
+          <h2 className="green-text text-4xl font-bold">
             <span className="orange-text">Tools</span> For Teachers <br /> And
             Learners
           </h2>
-          <p>
+          <p className="text-lg md:text-xl px-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor
@@ -128,14 +130,14 @@ const Feaures = () => {
         </div>
       </section>
 
-      <section className="flex-container flex-gap mt-3 ml-3">
+      <section className="flex flex-col items-center gap-4 lg:flex-row mt-3 ml-3">
         <div className="lace-italy">
           <button>Question</button>
           <h2 className="mt-2 mb-2">
             True or false? This play <br /> takes lace in italy
           </h2>
           <img src={ItalyLacePool} alt="italy lace" />
-          <div className="flex-container lace-italy-overlay">
+          <div className="flex items-center lace-italy-overlay">
             <svg
               width="142"
               height="142"
@@ -407,14 +409,8 @@ const Star = () => {
 };
 
 function UserInterfaceMini() {
-  //   const style = {
-  //     width: "28.4375rem",
-  //     height: "5rem",
-  //     fontSize: "1rem",
-  //     fontWeight: 500,
-  //   };
   return (
-    <div className="flex-container">
+    <div className="flex items-center gap-3">
       <div>
         <svg
           width="100"
@@ -519,7 +515,7 @@ function UserInterfaceMini() {
           </defs>
         </svg>
       </div>
-      <p className="width-30">
+      <p className="w-[300px] md:w-[450px] text-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqu.
       </p>
